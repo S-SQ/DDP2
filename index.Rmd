@@ -1,0 +1,24 @@
+---
+title: "Plotly"
+author: "Sean"
+date: "11/1/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r include=FALSE}
+library(tidyverse)
+library(plotly)
+```
+
+```{r}
+p <- ggplot(InsectSprays, aes(x=spray, y=count)) + geom_boxplot() +
+  labs(title = 'Insecticide Effectiveness by Type', x = 'Type of Insecticide', y = 'Effectiveness')
+
+ggplotly(p)
+```
