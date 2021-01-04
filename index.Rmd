@@ -2,14 +2,14 @@
 title: "Plotly"
 author: "Sean"
 date: "1 January 2021 <-- This is a date"
-output: html_document
+output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Simple Plot
 
 ```{r include=FALSE}
 library(tidyverse)
